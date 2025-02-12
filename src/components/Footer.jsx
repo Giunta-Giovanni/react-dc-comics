@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            /* cquesto è il footer*/
+            /* questo è il footer*/
         </footer>
     )
 }

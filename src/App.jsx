@@ -11,9 +11,12 @@ import './App.css'
 export default function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <div className='container'>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+
     </>
   )
 }
