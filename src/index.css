@@ -13,11 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* GENERAL */
 ul {
@@ -32,21 +27,21 @@ li a {
 
 
 /* BOOTSTRAP DEBUG */
-[class^='container'] {
-  border: 1px dashed black;
-  /* background-color: lightblue; */
-  /* min-height: 80vh; */
-}
+/* [class^='container']  */
+/* border: 1px dashed black; */
+/* background-color: lightblue; */
+/* min-height: 80vh; */
+/* } */
 
-[class^='row'] {
+/* [class^='row'] {
   border: 1px dashed red;
-}
+} */
 
-[class^='col'] {
+/* [class^='col'] {
   border: 1px solid grey;
-  /* background-color: aqua; */
-  /* height: 100px; */
-}
+  background-color: aqua;
+  height: 100px;
+} */
 
 /* Header */
 
@@ -74,22 +69,68 @@ li a {
   padding: 18px;
 }
 
+/* Effetto Hover */
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Effetto Active */
+.navbar-nav .act {
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+
+}
+
+
+/* MAIN */
+main {
+  background-color: #222;
+}
 
 /* Banner Nero */
-.banner {
-  background-color: #222;
+.content-box {
   color: white;
-  text-align: center;
-  padding: 20px;
+  font-family: "Open Sans";
+  text-align: left;
+  padding: 20px 0;
+}
+
+.content-box h2 {
+  font-size: 20px;
 }
 
 /* Barra Blu con icone */
 .blue-bar {
   background-color: #007bff;
-  text-align: center;
-  font-weight: bold;
 }
 
+.card-link {
+  margin: auto 10px;
+}
+
+.card-link a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+
+}
+
+.box-card-img {
+  width: 30px;
+  margin: auto 10px;
+
+}
+
+.card-link img {
+  width: 100%;
+
+}
+
+.card-link p {
+  margin: 0;
+  font-size: 12px;
+}
 
 /* FOOTER */
 .footer-link {
