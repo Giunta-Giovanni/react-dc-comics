@@ -52,11 +52,12 @@ li a {
 
 /* HEADER */
 header .row {
-  height: 50px;
+  height: 80px;
 }
 
+
 .dc-logo-container {
-  width: 50px;
+  width: 60px;
 }
 
 .dc-logo {
@@ -75,6 +76,50 @@ header .row {
   padding-left: 5px;
   font-size: 10px;
 }
+
+footer .row {
+  height: 80px;
+}
+
+footer .col {
+  display: flex;
+  align-items: center;
+}
+
+.btn-sign {
+  background: none;
+  color: white;
+  border-color: #0282f9;
+  height: 40px;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.col-chl {
+  display: flex;
+  justify-content: end;
+}
+
+.col-chl p {
+  margin: auto 0;
+}
+
+.channel {
+  display: flex;
+  margin: auto 0;
+
+}
+
+.single-channel {
+  padding-left: 10px;
+  width: 50px;
+}
+
+.single-channel img {
+  width: 100%;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
