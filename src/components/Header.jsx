@@ -1,4 +1,4 @@
-import NavHeader from './NavHeader';
+import NavBar from "./Navbar";
 export default function Header(props) {
 
 
@@ -12,7 +12,9 @@ export default function Header(props) {
                         </div>
                     </div>
                     <div className="col">
-                        <NavHeader navLinks={props.appNavLinks} />
+                        <nav className="navbar navbar-expand-lg p-0">
+                            <NavBar navLinks={props.appNavLinks} />
+                        </nav>
                     </div>
                 </div>
             </div>
