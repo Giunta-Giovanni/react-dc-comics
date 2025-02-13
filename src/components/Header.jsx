@@ -1,5 +1,6 @@
 import NavHeader from './NavHeader';
-export default function Header() {
+export default function Header(props) {
+
 
     return (
         <header className="text-center">
@@ -11,7 +12,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="col">
-                        <NavHeader />
+                        <NavHeader navLinks={props.appNavLinks} />
                     </div>
                 </div>
             </div>
