@@ -1,53 +1,52 @@
 export default function Header() {
     return (
-        <header>
-            <div className="row">
-                {/* parte sinistra con logo */}
-                <div className="col-1 d-flex p-0">
-                    <div className="dc-logo-container">
-                        <img className="dc-logo" src="./img/dc-logo.png" alt="" />
+
+        <header className="text-center py-4">
+            <div className="container">
+                <div className="row">
+                    <div className="col d-flex ">
+                        <div className="box-logo">
+                            <img src="./img/dc-logo.png" alt="DC Logo" className="dc-logo" />
+                        </div>
+                    </div>
+                    <div className="col ">
+                        <nav className="navbar navbar-expand-lg p-0">
+                            <ul className="navbar-nav">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">CHARACTERS</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active" href="#">COMICS</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">MOVIES</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">TV</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">GAMES</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">COLLECTIBLES</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">VIDEOS</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">FANS</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">NEWS</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">SHOP</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-
-                {/* parte destra con nav bar */}
-                <div className="col col-nav">
-                    <ul className="navbar">
-                        <li>
-                            <a href="">CHARACTERS</a>
-                        </li>
-                        <li>
-                            <a href="">COMICS</a>
-                        </li>
-                        <li>
-                            <a href="">MOVIES</a>
-                        </li>
-                        <li>
-                            <a href="">TV</a>
-                        </li>
-                        <li>
-                            <a href="">GAMES</a>
-                        </li>
-                        <li>
-                            <a href="">COLLECTIBLES</a>
-                        </li>
-                        <li>
-                            <a href="">VIDEOS</a>ì
-                        </li>
-                        <li>
-                            <a href="">FANS</a>
-                        </li>
-                        <li>
-                            <a href="">NEWS</a>
-                        </li>
-                        <li>
-                            <a href="">SHOP</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div >
-
-        </header >
-    )
+            </div>
+        </header>
+    );
 }
