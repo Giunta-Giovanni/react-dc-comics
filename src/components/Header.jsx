@@ -1,6 +1,7 @@
+import NavHeader from './NavHeader';
 export default function Header() {
-    return (
 
+    return (
         <header className="text-center">
             <div className="container">
                 <div className="row">
@@ -10,40 +11,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="col">
-                        <nav className="navbar navbar-expand-lg p-0">
-                            <ul className="navbar-nav">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">CHARACTERS</a>
-                                </li>
-                                <li className="nav-items">
-                                    <a className="nav-link act" href="#">COMICS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">MOVIES</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">TV</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">GAMES</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">COLLECTIBLES</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">VIDEOS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">FANS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">NEWS</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">SHOP</a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <NavHeader />
                     </div>
                 </div>
             </div>
