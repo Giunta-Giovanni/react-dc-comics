@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,7 +45,35 @@
 [class^='col'] {
   border: 1px solid grey;
   background-color: aqua;
-  height: 100px;
+  /* height: 100px; */
+}
+
+
+
+/* HEADER */
+header .row {
+  height: 50px;
+}
+
+.dc-logo-container {
+  width: 50px;
+}
+
+.dc-logo {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.col-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.navbar li {
+  padding-left: 5px;
+  font-size: 10px;
 }
 
 @media (prefers-color-scheme: light) {

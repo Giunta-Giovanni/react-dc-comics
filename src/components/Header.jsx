@@ -3,48 +3,49 @@ export default function Header() {
         <header>
             <div className="row">
                 {/* parte sinistra con logo */}
-                <div className="col d-flex">
-                    <img className="" src="./img/dc-logo.png" alt="" />
+                <div className="col-1 d-flex p-0">
+                    <div className="dc-logo-container">
+                        <img className="dc-logo" src="./img/dc-logo.png" alt="" />
+                    </div>
                 </div>
 
                 {/* parte destra con nav bar */}
-                <nav className="col navbar navbar-expand-lg ">
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
+                <div className="col col-nav">
+                    <ul className="navbar">
+                        <li>
+                            <a href="">CHARACTERS</a>
+                        </li>
+                        <li>
+                            <a href="">COMICS</a>
+                        </li>
+                        <li>
+                            <a href="">MOVIES</a>
+                        </li>
+                        <li>
+                            <a href="">TV</a>
+                        </li>
+                        <li>
+                            <a href="">GAMES</a>
+                        </li>
+                        <li>
+                            <a href="">COLLECTIBLES</a>
+                        </li>
+                        <li>
+                            <a href="">VIDEOS</a>ì
+                        </li>
+                        <li>
+                            <a href="">FANS</a>
+                        </li>
+                        <li>
+                            <a href="">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="">SHOP</a>
+                        </li>
+                    </ul>
 
-                        </ul>
-                    </div>
-                </nav>
+                </div>
+
             </div >
 
         </header >
