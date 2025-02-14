@@ -87,6 +87,14 @@ main {
   background-color: #222;
 }
 
+/* Jumbo section */
+.jumbo-section {
+  background-image: url('../public/img/jumbotron.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Banner Nero */
 .content-box {
   color: white;
