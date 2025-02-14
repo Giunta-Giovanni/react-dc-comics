@@ -107,6 +107,34 @@ main {
   font-size: 20px;
 }
 
+/* Card */
+.card {}
+
+.card-image {
+  width: 350px;
+  height: 300px;
+
+  overflow: hidden;
+  position: relative;
+
+}
+
+.card-image img {
+  width: 100%;
+  clip-path: inset(0px 70px 0px 70px);
+  position: absolute;
+  left: -68px;
+
+}
+
+.card-text {
+  padding: 10px 10px;
+  color: black;
+  font-family: "Open Sans";
+
+}
+
+
 /* Barra Blu con icone */
 .blue-bar {
   background-color: #007bff;
