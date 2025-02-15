@@ -33,15 +33,15 @@ li a {
 /* min-height: 80vh; */
 /* } */
 
-/* [class^='row'] {
+[class^='row'] {
   border: 1px dashed red;
-} */
+}
 
-/* [class^='col'] {
+[class^='col'] {
   border: 1px solid grey;
   background-color: aqua;
-  height: 100px;
-} */
+  /* height: 100px; */
+}
 
 /* Header */
 
@@ -108,32 +108,46 @@ main {
 }
 
 /* Card */
-.card {}
+.box-bk-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 
-.card-image {
-  width: 350px;
-  height: 300px;
-
-  overflow: hidden;
-  position: relative;
 
 }
 
-.card-image img {
+.bk-card {
+  width: 15%;
+  border: 1px solid white;
+  margin: 5px;
+}
+
+.bk-card-box-image {
   width: 100%;
-  clip-path: inset(0px 70px 0px 70px);
-  position: absolute;
-  left: -68px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.bk-card-box-image img {
+  width: 210px;
+  object-fit: cover;
+  position: relative;
+  left: -35px;
+  top: -20px;
 
 }
 
-.card-text {
-  padding: 10px 10px;
-  color: black;
+
+
+
+
+.bk-card-text {
+  text-align: center;
   font-family: "Open Sans";
-
+  color: black;
+  padding: 10px 2px;
+  margin: 0;
 }
-
 
 /* Barra Blu con icone */
 .blue-bar {
@@ -151,6 +165,7 @@ main {
   align-items: center;
 
 }
+
 
 .box-card-img {
   width: 30px;
