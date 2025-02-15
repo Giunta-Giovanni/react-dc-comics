@@ -1,5 +1,5 @@
 export default function Cards(props) {
-    console.table(props.cards)
+    // console.table(props.cards)
     return (
         <section className="content-box">
             <div className="container">

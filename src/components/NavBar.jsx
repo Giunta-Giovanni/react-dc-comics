@@ -13,14 +13,28 @@
 
 export default function NavBar(props) {
     return (
-        <nav className="navbar navbar-expand-lg p-0">
-            <ul className="navbar-nav">
-                {props.navLinks.map(link => (
-                    <li key={link.id} className="nav-item" >
-                        <a className="nav-link" href={link.url}>{link.text}</a>
-                    </li>
-                ))}
-            </ul >
+        <nav className="navbar navbar-expand-md p-0">
+            <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                    {props.navLinks.map(link => (
+                        <li key={link.id} className="nav-item">
+                            <a className="nav-link" href={link.url}>{link.text}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </nav>
 
     )
