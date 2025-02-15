@@ -12,9 +12,7 @@ export default function Header(props) {
                         </div>
                     </div>
                     <div className="col">
-                        <nav className="navbar navbar-expand-lg p-0">
-                            <NavBar navLinks={props.appNavLinks} />
-                        </nav>
+                        <NavBar navLinks={props.appNavLinks} />
                     </div>
                 </div>
             </div>

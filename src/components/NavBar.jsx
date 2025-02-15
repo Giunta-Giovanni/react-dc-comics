@@ -13,13 +13,16 @@
 
 export default function NavBar(props) {
     return (
-        <ul className="navbar-nav">
-            {props.navLinks.map(link => (
-                <li key={link.id} className="nav-item" >
-                    <a className="nav-link" href={link.url}>{link.text}</a>
-                </li>
-            ))}
-        </ul >
+        <nav className="navbar navbar-expand-lg p-0">
+            <ul className="navbar-nav">
+                {props.navLinks.map(link => (
+                    <li key={link.id} className="nav-item" >
+                        <a className="nav-link" href={link.url}>{link.text}</a>
+                    </li>
+                ))}
+            </ul >
+        </nav>
+
     )
 }
 
