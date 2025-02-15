@@ -8,6 +8,8 @@ export default function Footer(props) {
         <footer>
             <div className="footer-link">
                 <div className="container">
+                    <div className="dc-image-bg"></div>
+
                     {/* box link */}
                     <div className="box-link d-flex">
                         <div className="link-col">
