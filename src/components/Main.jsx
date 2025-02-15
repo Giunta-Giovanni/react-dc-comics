@@ -2,6 +2,7 @@ import BlueBar from "./BlueBar";
 import Cards from "./Cards";
 import Jumbo from "./Jumbo";
 import comics from "../data/comics";
+import shopBox from "../data/shopbox";
 
 export default function Main() {
 
@@ -11,7 +12,7 @@ export default function Main() {
 
             <Cards cards={comics} />
 
-            <BlueBar />
+            <BlueBar shops={shopBox} />
 
         </main >
 

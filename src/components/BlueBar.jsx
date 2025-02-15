@@ -1,8 +1,27 @@
-export default function BlueBar() {
+
+export default function BlueBar(props) {
+    console.log(props.shops)
+    const shops = props.shops
     return (
         <section className="blue-bar">
-            <div className="container d-flex justify-content-around text-white py-3">
-                <div className="card-link">
+            <div className="container shop-box">
+                {shops.map(shop => (
+                    <div key={shop.id} className="card-link">
+                        <a href="#">
+                            <div className="box-card-img">
+                                <img src={shop.imgSrc} alt={shop.label} />
+                            </div>
+                            <p>{shop.label}</p>
+                        </a>
+                    </div>
+                ))}
+
+            </div>
+        </section>
+    )
+}
+
+{/* <div className="card-link">
                     <a href="#">
                         <div className="box-card-img">
                             <img src="./img/buy-comics-digital-comics.png" alt="Digital Comics" />
@@ -41,8 +60,4 @@ export default function BlueBar() {
                         </div>
                         <p>DC POWER VISA</p>
                     </a>
-                </div>
-            </div>
-        </section>
-    )
-}
+                </div> */}
