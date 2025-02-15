@@ -4,7 +4,6 @@ export default function Footer(props) {
 
     // facciamo il destructuring
     const { appCategory1, appCategory2, appCategory3, appCategory4 } = props;
-    console.log(appCategory1, appCategory2, appCategory3, appCategory4)
     return (
         <footer>
             <div className="footer-link">
