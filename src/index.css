@@ -43,8 +43,7 @@ li a {
   height: 100px;
 } */
 
-/* Header */
-
+/*********** HEADER ***********/
 
 /* Logo */
 .box-logo {
@@ -71,7 +70,7 @@ li a {
   padding: 18px;
 }
 
-/* Effetto Hover */
+/* Navbar Effetto Hover */
 .navbar-nav .nav-link:hover {
   color: #007bff;
 }
@@ -80,7 +79,6 @@ li a {
 .navbar-nav .act {
   color: #007bff;
   border-bottom: 1px solid #007bff;
-
 }
 
 
@@ -172,25 +170,51 @@ main {
   color: white;
   display: flex;
   align-items: center;
-
+  font-size: 12px;
 }
-
 
 .box-card-img {
   width: 30px;
   margin: auto 10px;
+  transition: 1.5s;
 
 }
 
-.card-link img {
+.box-card-img img {
   width: 100%;
 
+
 }
 
-.card-link p {
+.card-link .box-card-txt {
   margin: 0;
-  font-size: 12px;
+  position: relative;
 }
+
+.card-link a:hover .box-card-img {
+  width: 50px;
+  transition: 1.5s;
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.card-link .box-card-txt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* Distanza dalla scritta */
+  bottom: -2px;
+  width: 0;
+  /* Spessore della linea */
+  height: 2px;
+  background-color: white;
+  transition: width 1s ease-in-out;
+}
+
+.card-link a:hover .box-card-txt::after {
+  width: 100%;
+}
+
+
 
 /* FOOTER */
 .footer-link {
