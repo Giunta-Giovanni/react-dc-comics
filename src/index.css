@@ -82,7 +82,7 @@ li a {
 }
 
 
-/* MAIN */
+/*********** MAIN ***********/
 main {
   background-color: #222;
 }
@@ -191,12 +191,7 @@ main {
   position: relative;
 }
 
-.card-link a:hover .box-card-img {
-  width: 50px;
-  transition: 1.5s;
-  transform: scale(1.2) rotate(-5deg);
-}
-
+/* card text pseudo elemnt for underline bar */
 .card-link .box-card-txt::after {
   content: "";
   position: absolute;
@@ -210,13 +205,22 @@ main {
   transition: width 1s ease-in-out;
 }
 
+/* card hover effect */
+.card-link a:hover .box-card-img {
+  width: 50px;
+  transition: 1.5s;
+  transform: scale(1.2) rotate(-5deg);
+}
+
 .card-link a:hover .box-card-txt::after {
   width: 100%;
 }
 
 
 
-/* FOOTER */
+/*********** FOOTER ***********/
+
+/* Boxlinks */
 .footer-link {
   background-image: url(../public/img/footer-bg.jpg);
 }
@@ -235,8 +239,6 @@ main {
   position: absolute;
   right: 0px;
   top: -100px;
-
-
 }
 
 .box-link {
@@ -267,6 +269,7 @@ main {
   transition: color 0.5s ease, text-shadow 0.5s ease, 0.5s;
 }
 
+/* boxlink hover effect */
 .box-link a:hover {
   color: yellow;
   text-shadow: 0 0 10px yellow, 0 0 20px orange, 0 0 30px red;
@@ -274,7 +277,7 @@ main {
 }
 
 
-
+/* social & subscription */
 .footer-social {
   background-color: #303030;
   font-family: "Open Sans";
@@ -318,8 +321,6 @@ footer .col {
   padding: auto;
   padding-left: 5px;
   padding-right: 5px;
-
-
   font-size: 15px;
 }
 
@@ -350,12 +351,15 @@ footer .col {
   width: 100%;
 }
 
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
 }
+
+/* Tablet view port */
 
 @media (max-width: 768px) {
   .navbar-collapse {
