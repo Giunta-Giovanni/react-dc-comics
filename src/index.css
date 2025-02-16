@@ -117,7 +117,7 @@ main {
 
 .bk-card {
   margin: 5px;
-
+  position: relative;
   /* debug */
   /* border: 1px solid green; */
 }
@@ -127,14 +127,45 @@ main {
   min-height: 200px;
   position: relative;
   overflow: hidden;
+  transition: 1s;
 }
 
-.bk-card-box-image img {
+.bk-card-image {
   width: 100%;
   position: absolute;
-  top: -20px;
+  top: 0px;
+  backface-visibility: hidden;
 
 }
+
+.bk-card-retro {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/img/footer-bg.jpg);
+}
+
+.bk-card-retro p {
+  text-align: center;
+}
+
+
+.bk-card-box-image:hover {
+  transform: rotateY(180deg);
+  transition: transform 2s;
+}
+
+.bk-card-box-image:hover .bk-card-retro {
+  display: block;
+  opacity: 1;
+  transform: rotateY(180deg);
+  transition: opacity 1s ease-in-out 0.5s;
+
+}
+
+
+
 
 .bk-card-text {
   text-align: center;
@@ -359,7 +390,7 @@ footer .col {
   }
 }
 
-/* Tablet view port */
+/* Tablet view */
 
 @media (max-width: 768px) {
   .navbar-collapse {

@@ -4,6 +4,7 @@ export default function Footer(props) {
 
     // facciamo il destructuring
     const { appCategory1, appCategory2, appCategory3, appCategory4 } = props;
+
     return (
         <footer>
             <div className="footer-link">
@@ -42,7 +43,8 @@ export default function Footer(props) {
 
                         {/* colonna destra */}
                         <div className="col col-chl">
-                            {/* canali da seguire */}
+
+                            {/* Social */}
                             <p>FOLLOW US</p>
                             <ul className="channel">
                                 <li className="single-channel">
