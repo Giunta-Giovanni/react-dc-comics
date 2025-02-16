@@ -11,7 +11,7 @@ export default function BlueBar(props) {
                             <div className="box-card-img">
                                 <img src={shop.imgSrc} alt={shop.label} />
                             </div>
-                            <p>{shop.label}</p>
+                            <div className="box-card-txt">{shop.label}</div>
                         </a>
                     </div>
                 ))}
