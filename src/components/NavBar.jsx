@@ -30,7 +30,8 @@ export default function NavBar(props) {
                 <ul className="navbar-nav">
                     {props.navLinks.map(link => (
                         <li key={link.id} className="nav-item">
-                            <a className="nav-link" href={link.url}>{link.text}</a>
+                            {/* utilizzo di un operatore ternario per attivare classe active */}
+                            <a className={`nav-link ${link.id === 3 ? 'act' : ''}`} href={link.url}>{link.text}</a>
                         </li>
                     ))}
                 </ul>
